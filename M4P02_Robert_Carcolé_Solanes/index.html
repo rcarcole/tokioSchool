@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="local()">localStorage</button>
+    <div id="containerLocal"></div>
+    <button onclick="session()">sessionStorage</button>
+    <div id="containerSession"></div>
+    <button onclick="mostrar()">Mostrar</button>
+    
+    <script>
+        function local() {
+            var local = localStorage.getItem("M4_UD02_P02");
+            if (local == null) {
+                localStorage.setItem("M4_UD02_P02", "José Luis");
+                // document.getElementById("containerLocal").innerHTML = "localStorage creado";
+            } else {
+                alert("localStorage ya existe");
+        }
+        }
+
+        function session() {
+            var session = sessionStorage.getItem("Date");
+            let fecha = new Date();
+            if (session == null) {
+                sessionStorage.setItem("Date", fecha.getTime());
+                // document.getElementById("containerSession").innerHTML = "sessionStorage creado";
+            } else {
+                alert("sessionStorage ya existe");
+            }
+        }
+
+        function mostrar() {
+            var local = localStorage.getItem("M4_UD02_P02");
+            var session = sessionStorage.getItem("Date");
+            document.getElementById("containerLocal").innerHTML = local;
+            document.getElementById("containerSession").innerHTML = session;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
