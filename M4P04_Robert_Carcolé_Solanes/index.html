@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+    <table id="contenedor">
+
+    </table>
+
+    <button id="insertar">Añadir</button>
+
+    <script>
+        var contenedor = document.getElementById("contenedor");
+        fetch("https://jsonplaceholder.typicode.com/photos")
+        .then(function(response){
+            return response.json();
+        }).then(function(data){
+            for(var i = 0; i < 20; i++){
+                let tr = `<tr>
+                            <td>${data[i].id}</td>
+                            <td>${data[i].title}</td>
+                            <td><img src="${data[i].thumbnailUrl}"></td>
+                            <td><button onclick="eliminar('${data[i].id}')" id="${data[i].id}">Eliminar</button></td>
+                            </tr>`;
+                contenedor.innerHTML += tr;
+            }
+        });
+
+        function insertar(){
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify({
+                albumId: 1,
+                title: 'Antonio',
+                url: 'https://cursos.com/wp-content/uploads/2021/04/academia-tokio-school.jpg',
+                thumbnailUrl: null,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+    })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+            }
+
+        function eliminar(id){
+            fetch('https://jsonplaceholder.typicode.com/posts/'+id, {
+            method: 'DELETE',
+        }) 
+        .then((json) => console.log(json));
+        }
+
+        document.getElementById("insertar").addEventListener("click", insertar);
+    </script>
+
+</body>
+
+</html>
