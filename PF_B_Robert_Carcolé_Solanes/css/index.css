@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'TitilliumWeb-Black';
+    src: url("../fuentes/TitilliumWeb-Black.ttf");
+  }
+
+h1{
+    font-family: 'TitilliumWeb-Black';
+    font-size: 3em;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+}
+
+li{
+    font-family: TitilliumWeb-Black;
+}
+
+@media screen and (max-width: 600px){
+    
+}
+    
