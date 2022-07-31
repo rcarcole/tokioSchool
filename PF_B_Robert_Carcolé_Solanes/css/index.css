@@ -18,16 +18,26 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     background-color: #f2f2f2;
-    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
 }
 
 li{
     font-family: TitilliumWeb-Black;
+    margin: 1em;
 }
+li :hover {
+    background-color: yellow;
+  }
 
 @media screen and (max-width: 600px){
     
 }
-    
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2; 
+}
+
