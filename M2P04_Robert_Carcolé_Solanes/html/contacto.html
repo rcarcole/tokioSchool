@@ -11,6 +11,20 @@
 </head>
 
 <body>
+    <section class="top-nav">
+        <div>
+          <img src="../media/img/logo.png" alt="logotipo" style="height: 65px">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienSomos.html">Quiénes somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+      </section>
     <header>
         <h1>M2P04Robert Carcolé Solanes</h1>
         <div class="RRSS">
@@ -20,14 +34,7 @@
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienSomos.html">Quiénes somos</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    
 
 
     <div class="banner">
@@ -36,8 +43,8 @@
     </div>
 
 
-    <div style="width: 1px">
-        <form action="" method="">
+    <div style="text-align: center;">
+        <form>
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre"><br>
             <label for="email">Email:</label>
@@ -47,7 +54,7 @@
             <label for="mensaje">Mensaje:</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             <br>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" style="margin-bottom: 50px">
         </form>
     </div>
 
