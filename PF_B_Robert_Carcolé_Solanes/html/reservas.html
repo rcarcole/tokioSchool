@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/app.js"></script>
 </head>
 <body>
     <style>
@@ -17,7 +19,7 @@
             
             margin-bottom: 10px;
         }
-        form {
+        .container {
             margin: 0 auto;
             align-content: center;
             width: 50%;
@@ -43,7 +45,7 @@
 
     </div>
     <h3>Contacta con nosotros</h3>
-    <form action="" method="">
+    <div class="container">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre"><br>
         <label for="email">Email:</label>
@@ -53,8 +55,8 @@
         <label for="mensaje">Mensaje:</label>
         <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
         <br>
-        <input type="submit" value="Enviar">
-    </form>
+        <button onclick="sendEmail()">Enviar</button>
+    </div>
     <footer>
         <ul>
             <li><a href="../legal/avisoLegal.html">Aviso legal</a></li>
