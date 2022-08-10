@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -36,9 +39,29 @@
 
     <!-- Daremos la bienvenida al usuario y mostraremos un 
     pequeño resumen de nuestro servicio y especialidades -->
-    <div class="Bienvenida">
-        <p>Tenemos mucha experiencia en el sector de la hostelería, bla bla bla (Greta Thumberg)</p>
+    <div class="container">
+        <div class="row bienvenida">
+            <div class="col-8"><p>En 1966 se fundó el restaurante Casa Macarrilla. El abuelo Evelio, pescador y restaurador, salía cada mañana a pescar mientras la abuela ponía a punto el restaurante para recibir a los comensales del día. A la vuelta de su jornada pesquera, el abuelo cocinaba, siguiendo las auténticas recetas tradicionales de los pescadores de Cambrils, el producto recién pescado.
+                Años más tarde se incorporaron sus hijos al negocio familiar. Xavier Martí, el mayor de los cuatro hermanos, segunda generación del restaurante, acabó siendo el propietario consiguiendo, durante su larga trayectoria como restaurador, varios premios y reconocimientos gastronómicos.</p></div>
+            <div class="col-4"><img src="../imágenes/comida1.png" class="float-right rounded" style="width: 250px" alt=""></div>
+            
+        </div>
 
+        <div class="actualidad">
+            <h2>Actualidad</h2>
+            <div class="row">
+                <div class="col">
+                    <p>Producto de proximidad y cocina de autor
+                    El año 2003 se incorpora la tercera generación del restaurante; en primer lugar Eduard Martí y actualmente Xavier Martí, actual chef del restaurante, para continuar con la tradición familiar y dar a conocer, a través de un nuevo concepto, el arte de la antigua cocina marinera de los pescadores de Cambrils.
+                    Cocina de fusión. Tradición y modernidad. Alma y esencia de la auténtica cocina marinera mezclada con sorprendentes toques de autor.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn btn-outline-secondary btn-lg">Leer más</button>
+                </div>
+            </div>
+        </div> 
     </div>
 
     <!-- <div class="banner">
@@ -59,10 +82,7 @@
             <li><a href="../legal/politicaPrivacidad.html">Política de privacidad</a></li>
             <li><a href="../legal/politicaCookies.html">Política de Cookies</a></li>
         </ul>
-        <p>&copy; Copyright 2022 - Robert Carcolé Solanes</p>
     </footer>
-
-
 </body>
 
 </html>

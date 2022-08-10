@@ -1,6 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+  footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+  }
+
 @font-face {
     font-family: 'TitilliumWeb-Black';
     src: url("../fuentes/TitilliumWeb-Black.ttf");
+}
+
+p{
+    font-size: 1.5em;
+    text-align: justify;
 }
 
 h1 {
@@ -47,7 +70,7 @@ nav {
     background: linear-gradient(to left, #4565f4, #49d5ee);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFF;
-    height: 50px;
+    height: 65px;
     padding: 1em;
 }
 
@@ -128,6 +151,17 @@ input {
     align-content: center;
     width: 50%;
 }
+
+.caja{
+    
+
+}
+
+
+.bienvenida{
+    display: flex;
+}
+
 
 
 /* --------------------------------------------------------------------- */
