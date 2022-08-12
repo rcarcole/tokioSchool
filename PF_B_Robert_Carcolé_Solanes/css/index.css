@@ -71,7 +71,6 @@ nav {
     justify-content: space-between;
     background-color: #00BAF0;
     background: linear-gradient(to left, #4565f4, #49d5ee);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFF;
     height: 65px;
     padding: 1em;
@@ -159,11 +158,6 @@ input {
     width: 50%;
 }
 
-.caja{
-    
-
-}
-
 .contornoMenu:hover{
     border-bottom: 3px solid #00BAF0;
 }
@@ -179,6 +173,9 @@ input {
     display: none;
   }
 
+  .img-portada{
+    height: 700px;
+  }
 /* --------------------------------------------------------------------- */
 
 @media (max-width: 700px) {
@@ -223,5 +220,13 @@ input {
 
     .float-right {
         float: none !important;
+    }
+
+    .max-heightMenu{
+        min-height: none;
+        max-height: none;
+    }
+    footer {
+        position: absolute;
     }
 }
