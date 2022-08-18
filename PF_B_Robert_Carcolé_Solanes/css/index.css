@@ -8,6 +8,10 @@
     background:transparent;
 }
 
+body{
+    margin-left: -15px;
+}
+
 .spacer{
     height: 80px;
 }
@@ -20,7 +24,7 @@
     color: white;
     display: grid;
     gap: 1rem;
-    grid-auto-rows: 5rem;
+    grid-auto-rows: 3rem;
   }
 
 @font-face {
@@ -251,9 +255,11 @@ input {
         min-height: none;
         max-height: none;
     }
-    /* footer {
-        position: absolute;
-    } */
+
+    footer {
+        grid-auto-rows: 4.5rem;    
+    }
+
     img{
         max-height: none;
     }
