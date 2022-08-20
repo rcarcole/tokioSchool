@@ -25,6 +25,14 @@
 // }
 
 
+function botonEnviar(){
+  console.log("hola");
+  let enviar = document.getElementById("enviar");
+  enviar.addEventListener("click", () => {
+    alert("Mensaje enviado");
+  });
+}
+
 // GoogleMaps API
 let map, infoWindow, marker;
 

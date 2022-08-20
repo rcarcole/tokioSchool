@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding:0;
     border:0;
@@ -6,10 +6,59 @@
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+} */
+
+@font-face {
+    font-family: 'TitilliumWeb-Black';
+    src: url("../fuentes/TitilliumWeb-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Olivia';
+    src: url("../fuentes/Olivia.ttf");
+}
+
+.carta{
+    font-family: 'Olivia';
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+/* modificacion de clase de bootstrap*/
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+h3{
+    font-size: 1.5em;
 }
 
 body{
-    margin-left: -15px;
+    position: relative;
+    min-height: 100vh;
+    /* display: grid; */
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/* .carta-plato{
+    text-align: center;
+    margin-top: 5em;
+    box-sizing: content-box;
+    width: 35vw;
+    border: solid #5B6DCD 1em;
+    padding: 1em;
+} */
+
+.carta-plato{
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 5em;
+    border: solid #5b6dcd47 1em;
+    padding: 1em;
 }
 
 .spacer{
@@ -18,19 +67,18 @@ body{
 
   footer {
     background-color: #F8F9FA;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    width: 100vw;
+    width: 99vw;
     color: white;
     display: grid;
     gap: 1rem;
     grid-auto-rows: 3rem;
   }
 
-@font-face {
-    font-family: 'TitilliumWeb-Black';
-    src: url("../fuentes/TitilliumWeb-Black.ttf");
-}
+  form{
+    margin-bottom: 2em;
+  }
 
 p{
     font-size: 1.5em;
@@ -157,12 +205,6 @@ label {
 
 input {
     margin-bottom: 10px;
-}
-
-.formulario {
-    margin: 0 auto;
-    align-content: center;
-    width: 50%;
 }
 
 .contornoMenu:hover{
