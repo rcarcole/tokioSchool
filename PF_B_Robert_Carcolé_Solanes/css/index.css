@@ -20,9 +20,7 @@
 
 .carta{
     font-family: 'Olivia';
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    min-height: 110rem;
 }
 
 
@@ -38,19 +36,8 @@ h3{
 body{
     position: relative;
     min-height: 100vh;
-    /* display: grid; */
     grid-template-rows: auto 1fr auto;
 }
-
-
-/* .carta-plato{
-    text-align: center;
-    margin-top: 5em;
-    box-sizing: content-box;
-    width: 35vw;
-    border: solid #5B6DCD 1em;
-    padding: 1em;
-} */
 
 .carta-plato{
     display: grid;
@@ -244,6 +231,11 @@ input {
     gap: 1rem;
     grid-auto-rows: 22rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.mapa {
+    width: 500px;
+    height: 500px;
 }
 
 
