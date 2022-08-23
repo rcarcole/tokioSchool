@@ -212,7 +212,7 @@ input{
     border-radius: 0,3rem;
     box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
     color: #333;
-  }
+}
   
 
 .gallery{
@@ -223,7 +223,7 @@ input{
 }
 
 .mapa{
-    width: 500px;
+    width: 70vw;
     height: 500px;
 }
 

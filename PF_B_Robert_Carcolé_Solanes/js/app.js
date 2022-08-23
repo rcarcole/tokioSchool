@@ -1,7 +1,7 @@
-//Get the button
+// Botón para subir arriba de la página cuando está en scroll
 let mybutton = document.getElementById("btn-back-to-top");
 
-// When the user scrolls down 20px from the top of the document, show the button
+//Cuando el usuario scrollea 20px desde el borde superior de la página, se muestra el botón para subir arriba de la página
 window.onscroll = function () {
   scrollFunction();
 };
@@ -16,30 +16,30 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-// When the user clicks on the button, scroll to the top of the document
+// Cuando el usuario clica en el botón, se hace scroll automático hacia al comienzo del documento
 mybutton.addEventListener("click", backToTop);
-
 function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-
+// Apartado de RESERVAS, funcionalidad botón teniendo en cuenta si hay info o no
+document.getElementById("enviar").addEventListener("click", botonEnviar);
 function botonEnviar(){
   let mail = document.getElementById("formControlMail").value;
   let name = document.getElementById("formControlName").value;
-  console.log(mail);
-  console.log(name);
-  // el if no funciona  
-  if (mail || name != null){
-    console.log("mensaje enviado");
-    let enviar = document.getElementById("enviar");
-    enviar.addEventListener("click", () => {
-      // s'envia varies vegades el alert
-      alert("Mensaje enviado");
-    });
-  } else {
-    alert ("Introduzca un correo electrónico válido y el nombre de reserva.")
+  let form = document.getElementById("formulario");
+  let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  if (emailRegex.test(mail) && name != ""){
+      // form.classList.remove("was-validated");
+      Swal.fire('Mensaje enviado.', '', 'success')
+    } else {
+      form.classList.add('was-validated');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Introduzca un correo electrónico válido y el nombre de reserva.',
+      })
   }
 }
 
@@ -54,8 +54,6 @@ function initMap() {
           lat: 40.884181,
           lng: 0.804911,
         };
-
-        
     const marker = new google.maps.Marker({
         position: pos,
         map,
@@ -63,9 +61,6 @@ function initMap() {
     marker.setMap(map);
     map.setCenter(pos);
     },
-      () => {
-        handleLocationError(true, infoWindow, map.getCenter());
-      }
     );
     
   map = new google.maps.Map(document.getElementById("containerMap"), {
@@ -81,16 +76,6 @@ function initMap() {
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
   });
-}
-
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(
-    browserHasGeolocation
-      ? "Error: The Geolocation service failed."
-      : "Error: Your browser doesn't support geolocation."
-  );
-  infoWindow.open(map);
 }
 
 window.initMap = initMap;
