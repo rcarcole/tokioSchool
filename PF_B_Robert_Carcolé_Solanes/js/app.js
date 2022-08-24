@@ -80,3 +80,10 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+
+// Apartado de MENUGRUPOS, funcionalidad menú según el grupo seleccionado.
+function menuConcreto(imagen) {
+  let resultado = `<img src="../imágenes/menu-`+imagen+`.png" alt="menuGrupos" class="img-gallery menu-grupos">`;
+  document.getElementById("resultado").innerHTML = resultado;
+}
