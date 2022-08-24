@@ -291,7 +291,7 @@ input{
     }
 
     footer {
-        grid-auto-rows: 4.5rem;    
+        grid-auto-rows: 1rem;    
     }
 
     img{
