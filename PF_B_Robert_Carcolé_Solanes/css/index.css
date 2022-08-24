@@ -231,7 +231,7 @@ input{
 }
 
 .mapa{
-    width: 70vw;
+    width: 50vw;
     height: 500px;
 }
 
@@ -304,5 +304,8 @@ input{
 
     img{
         max-height: none;
+    }
+    .mapa{
+        width: 70vw;
     }
 }
