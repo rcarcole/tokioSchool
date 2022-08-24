@@ -24,6 +24,7 @@ function backToTop() {
 }
 
 // Apartado de RESERVAS, funcionalidad botón teniendo en cuenta si hay info o no
+// Añadido el script de sweet alert en RESERVAS.html
 document.getElementById("enviar").addEventListener("click", botonEnviar);
 function botonEnviar(){
   let mail = document.getElementById("formControlMail").value;

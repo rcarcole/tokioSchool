@@ -227,6 +227,13 @@ input{
     height: 500px;
 }
 
+.menu-grupos{
+    box-shadow: none;
+    max-height: 100rem;
+    width: 50vw;
+    margin-bottom: 1rem;
+}
+
 
 /* --------------------------------------------------------------------- */
 
