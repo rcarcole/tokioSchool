@@ -51,60 +51,51 @@
     <div class="row">
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Económico</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Estándar</a>
-          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Ejecutivo</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Gourmet</a>
+          <a class="list-group-item list-group-item-action active" onclick="menuConcreto('economico')" id="list-economico-list" data-toggle="list" href="#list-economico" role="tab" aria-controls="economico">Económico</a>
+          <a class="list-group-item list-group-item-action" onclick="menuConcreto('estandar')" id="list-estandar-list" data-toggle="list" href="#list-estandar" role="tab" aria-controls="estandar">Estándar</a>
+          <a class="list-group-item list-group-item-action" onclick="menuConcreto('ejecutivo')" id="list-ejecutivo-list" data-toggle="list" href="#list-ejecutivo" role="tab" aria-controls="ejecutivo">Ejecutivo</a>
+          <a class="list-group-item list-group-item-action" onclick="menuConcreto('gourmet')" id="list-gourmet-list" data-toggle="list" href="#list-gourmet" role="tab" aria-controls="gourmet">Gourmet</a>
         </div>
       </div>
       <div class="col-8">
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          <div class="tab-pane fade show active" id="list-economico" role="tabpanel" aria-labelledby="list-economico-list">
             <p>Recetas clásicas y ancestrales, re-interpretaciones marineras y alguna sorprendente creación de autor de nuestro chef. Esta propuesta se sirve <u>de lunes a jueves mediodía y noche y los viernes al mediodía</u>, excepto vísperas de fiesta y festivos.
             <br>
               Menú por mesa completa, mínimo 2 personas.
               Precio por persona IVA incluido. Bebidas no incluidas.
             <br>      
             <small>* Todos nuestros menús están disponibles para grupos e intentaremos adaptarlos a su medida. Consulte condiciones al T. 996 66 66 66 o a través de nuestro <a href="./reservas.html">formulario de contacto</a> .</small></p>
-            <div class="container">
-              <img src="../imágenes/menuGrupos.png" alt="menuGrupos" class="img-gallery menu-grupos">
-            </div>
           </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          <div class="tab-pane fade" id="list-estandar" role="tabpanel" aria-labelledby="list-estandar-list">
             <p>Productos de proximidad con una base marinera y vegetal de Km-0. Creaciones con evolución de nuestro recetario clásico. Cocina creativa y algunos platos de autor. Esta propuesta se sirve <u>todos los días</u>, mediodía y noche.
             <br>
               Menú por mesa completa, mínimo 2 personas.
               Precio por persona IVA incluido. Bebidas no incluidas.
             <br>          
             <small>* Todos nuestros menús están disponibles para grupos e intentaremos adaptarlos a su medida. Consulte condiciones al T. 996 66 66 66 o a través de nuestro <a href="./reservas.html">formulario de contacto</a> .</small></p>
-            <div class="container">
-              <img src="../imágenes/menu-estandar.png" alt="menuGrupos" class="img-gallery menu-grupos">
-            </div>
           </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+          <div class="tab-pane fade" id="list-ejecutivo" role="tabpanel" aria-labelledby="list-ejecutivo-list">
             <p>Menú degustación que incluye todas las creaciones de temporada. Esta propuesta se sirve todos los días, mediodía y noche.
             <br>
               Menú por mesa completa, mínimo 2 personas.
               Precio por persona IVA incluido. Bebidas no incluidas.
             <br>          
             <small>* Todos nuestros menús están disponibles para grupos e intentaremos adaptarlos a su medida. Consulte condiciones al T. 996 66 66 66 o a través de nuestro <a href="./reservas.html">formulario de contacto</a> .</small></p>
-            <div class="container">
-              <img src="../imágenes/menu-ejecutivo.png" alt="menuGrupos" class="img-gallery menu-grupos">
-            </div>
           </div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+          <div class="tab-pane fade" id="list-gourmet" role="tabpanel" aria-labelledby="list-gourmet-list">
             <p>Menú degustación con todas las creaciones de temporada llevadas al nivel de máxima experiencia. Esta propuesta se sirve todos los días, mediodía y noche.
             <br>
               Menú por mesa completa, mínimo 2 personas.
               Precio por persona IVA incluido. Bebidas no incluidas.
             <br>          
             <small>* Todos nuestros menús están disponibles para grupos e intentaremos adaptarlos a su medida. Consulte condiciones al T. 996 66 66 66 o a través de nuestro <a href="./reservas.html">formulario de contacto</a> .</small></p>
-            <div class="container">
-              <img src="../imágenes/menu-gourmet.png" alt="menuGrupos" class="img-gallery menu-grupos">
-            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container" id="resultado">
+      <img src="../imágenes/menu-economico.png" alt="menuGrupos" class="img-gallery menu-grupos">
     </div>
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
       <i class="fas fa-arrow-up"></i>

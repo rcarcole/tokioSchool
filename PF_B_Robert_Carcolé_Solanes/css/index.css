@@ -9,8 +9,12 @@
 }
 
 .carta{
-    font-family: 'Olivia';
+    /* font-family: 'Olivia'; */
     min-height: 75rem;
+}
+#cartaPlato>p, #cartaPlato>h3{
+    font-family: 'Olivia';
+    width: 100%;
 }
 
 /* modificacion de clase de bootstrap*/
@@ -31,10 +35,14 @@ body{
 .carta-plato{
     display: grid;
     gap: 1rem;
-    justify-items: center;
+    justify-items: left;
     margin-top: 5em;
     border: solid #5b6dcd47 1em;
     padding: 1em;
+}
+
+.span-carta{
+    font-family: 'TitilliumWeb';
 }
 
 .spacer{
